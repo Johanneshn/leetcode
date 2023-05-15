@@ -2,8 +2,8 @@ namespace LeetCode;
 
 /*
  * https://leetcode.com/problems/two-sum/submissions/946227379/
- * Runtime: 147 ms (beats 82.23%)
- * Memory: 45.5 MB (beats 5.17%) 
+ * Runtime: 147 ms - O(n)
+ * Memory: 45.5 MB - O(n)
  */
 
 public static class _001_TwoSum {
