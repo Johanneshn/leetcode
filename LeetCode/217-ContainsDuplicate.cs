@@ -3,7 +3,7 @@ namespace LeetCode;
 /*
  * https://leetcode.com/problems/contains-duplicate/submissions/946234692/
  * Runtime: 193 ms - O(n)
- * Memory: 55.5 MB - 0(n) 
+ * Memory: 55.5 MB - O(n)
  */
 
 public static class _217_ContainsDuplicate {
