@@ -2,6 +2,18 @@ namespace LeetCode.UnitTest;
 
 public class _036_ValidSudoku_Tests
 {
+    [Theory]
+    [MemberData(nameof(Case1))]
+    [MemberData(nameof(Case2))]
+    [MemberData(nameof(Case3))]
+    [MemberData(nameof(Case4))]
+    [MemberData(nameof(Case5))]
+    public void Solution(char[][] board, bool expected)
+    {
+        var sut = _036_ValidSudoku.IsValidSudoku(board);
+        Assert.Equal(expected, sut);
+    }
+
     public static readonly TheoryData<char[][], bool> Case1 =
         new()
         {
@@ -56,18 +68,6 @@ public class _036_ValidSudoku_Tests
                 false
             }
         };
-
-    [Theory]
-    [MemberData(nameof(Case1))]
-    [MemberData(nameof(Case2))]
-    [MemberData(nameof(Case3))]
-    [MemberData(nameof(Case4))]
-    [MemberData(nameof(Case5))]
-    public void Solution(char[][] board, bool expected)
-    {
-        var sut = _036_ValidSudoku.IsValidSudoku(board);
-        Assert.Equal(expected, sut);
-    }
 
     public static readonly TheoryData<char[][], bool> Case4 =
         new()
