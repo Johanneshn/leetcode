@@ -10,8 +10,8 @@ public class _238_ProductOfArrayExceptSelfTests
     [InlineData(new[] { 0, 0 }, new[] { 0, 0 })]
     public void Solution(int[] nums, int[] expected)
     {
-        var sut = _238_ProductOfArrayExceptSelf.ProductExceptSelf(nums);
+        var actual = _238_ProductOfArrayExceptSelf.ProductExceptSelf(nums);
 
-        Assert.Equal(expected, sut);
+        Assert.Equal(expected, actual);
     }
 }

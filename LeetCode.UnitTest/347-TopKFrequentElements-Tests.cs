@@ -8,8 +8,7 @@ public class _347_TopKFrequentElements_Tests
     [InlineData(new[] { -1, -1, -2, -2, 0, 1 }, 2, new[] { -1, -2 })]
     public void Solution(int[] nums, int k, int[] expected)
     {
-        var sut = _347_TopKFrequentElements.TopKFrequent(nums, k);
-
-        Assert.Equal(expected, sut);
+        var actual = _347_TopKFrequentElements.TopKFrequent(nums, k);
+        Assert.Equal(expected, actual);
     }
 }

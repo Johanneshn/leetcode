@@ -8,9 +8,9 @@ public class _020_ValidParentheses_Tests {
     [InlineData("((", false)]
     [InlineData("{[]}", true)]
     [InlineData(")(){}", false)]
-    public void Solution(string s, bool result)
+    public void Solution(string s, bool expected)
     {
-        var sut = _020_ValidParentheses.IsValid(s);
-        Assert.Equal(sut, result);
+        var actual = _020_ValidParentheses.IsValid(s);
+        Assert.Equal(expected, actual);
     } 
 }

@@ -6,10 +6,10 @@ public class _242_ValidAnagramTests
     [InlineData("anagram", "nagaram", true)]
     [InlineData("car", "cat", false)]
     [InlineData("aacc", "ccac", false)]
-    public void Solution(string s, string t, bool result)
+    public void Solution(string s, string t, bool expected)
     {
-        var sut = _242_ValidAnagram.IsAnagram(s, t);
+        var actual = _242_ValidAnagram.IsAnagram(s, t);
         
-        Assert.Equal(sut, result);
+        Assert.Equal(actual, expected);
     }
 }

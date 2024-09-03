@@ -9,9 +9,9 @@ public class _125_ValidPalindrome_Tests
     [InlineData("a", true)]
     [InlineData("", true)]
     [InlineData("0P", false)]
-    public void Solution(string s, bool result)
+    public void Solution(string s, bool expected)
     {
-        var sut = _125_ValidPalindrome.IsPalindrome(s);
-        Assert.Equal(result, sut);
+        var actual = _125_ValidPalindrome.IsPalindrome(s);
+        Assert.Equal(expected, actual);
     }
 }

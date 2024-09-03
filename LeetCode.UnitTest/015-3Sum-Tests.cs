@@ -42,7 +42,7 @@ public class _015_3Sum_Tests
     [MemberData(nameof(Case3))]
     public void Solution(int[] nums, IList<IList<int>> expected)
     {
-        var sut = _015_3Sum.ThreeSum(nums);
-        Assert.Equal(expected, sut);
+        var actual = _015_3Sum.ThreeSum(nums);
+        Assert.Equal(expected, actual);
     }
 }

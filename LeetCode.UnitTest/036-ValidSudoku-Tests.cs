@@ -10,8 +10,8 @@ public class _036_ValidSudoku_Tests
     [MemberData(nameof(Case5))]
     public void Solution(char[][] board, bool expected)
     {
-        var sut = _036_ValidSudoku.IsValidSudoku(board);
-        Assert.Equal(expected, sut);
+        var actual = _036_ValidSudoku.IsValidSudoku(board);
+        Assert.Equal(expected, actual);
     }
 
     public static readonly TheoryData<char[][], bool> Case1 =

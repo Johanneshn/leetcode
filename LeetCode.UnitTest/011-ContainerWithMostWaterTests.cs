@@ -7,7 +7,7 @@ public class _011_ContainerWithMostWaterTests {
     [InlineData(new[] {1,1}, 1)]
     public void Solution(int[] input, int expected)
     {
-        var result = _011_ContainerWithMostWater.MaxArea(input);
-        Assert.Equal(expected, result);
+        var actual = _011_ContainerWithMostWater.MaxArea(input);
+        Assert.Equal(expected, actual);
     }
 }

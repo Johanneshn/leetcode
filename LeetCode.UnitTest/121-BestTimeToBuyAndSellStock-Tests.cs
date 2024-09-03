@@ -10,8 +10,8 @@ public class _121_BestTimeToBuyAndSellStock_Tests {
     [InlineData(new[] {7,6,4,3,1}, 0)]
     public void Solution(int[] nums, int result)
     {
-        var sut = _121_BestTimeToBuyAndSellStock.MaxProfit(nums);
+        var actual = _121_BestTimeToBuyAndSellStock.MaxProfit(nums);
         
-        Assert.Equal(result, sut);
+        Assert.Equal(result, actual);
     }
 }

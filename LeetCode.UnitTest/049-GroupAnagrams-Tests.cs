@@ -57,7 +57,7 @@ public class _049_GroupAnagrams_Tests
     [MemberData(nameof(Case3))]
     public void Solution(string[] input, IList<IList<string>> expected)
     {
-        var sut = _049_GroupAnagrams.GroupAnagrams(input);
-        Assert.True(AreResultIdentical(expected, sut));
+        var actual = _049_GroupAnagrams.GroupAnagrams(input);
+        Assert.True(AreResultIdentical(expected, actual));
     }
 }
